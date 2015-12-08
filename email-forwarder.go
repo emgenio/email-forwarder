@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"os"
 
@@ -29,17 +30,19 @@ type WorkerConfig struct {
 	}
 }
 
+const (
+	defaultConfigFile = "./config.yaml"
+)
+
 var (
 	cfg WorkerConfig
 )
 
-const (
-	configPath = "./config.yaml"
-)
-
 func init() {
-	loadConfig(configPath, &cfg)
-	fmt.Println("Loading configuration file", configPath)
+	configPath := flag.String("config", defaultConfigFile, "path to the configuration file.")
+	flag.Parse()
+	fmt.Println("Loading configuration file", *configPath)
+	loadConfig(*configPath, &cfg)
 }
 
 func main() {
