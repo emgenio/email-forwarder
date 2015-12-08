@@ -1,9 +1,9 @@
 environment: development
 
 mandrill:
-  clientkey:  
-  from:       proxy@gmail.com
+  clientkey:  xxxxxxxxxxxxxxxx
+  from:       proxy@domain.com
 
 amqp:
   hostname:     amqp://guest:guest@localhost:5672/
-  messagequeue: email_poller_messages
+  messagequeue: message_queue_name
