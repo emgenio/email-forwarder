@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/emgenio/email-poller/imap"
+	"github.com/catuss-a/imap"
 	"github.com/keighl/mandrill"
 	"github.com/streadway/amqp"
 )
