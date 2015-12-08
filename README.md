@@ -6,9 +6,8 @@ Email-forwarder instanciates a Rabbit MQ queue specified in a config yaml file, 
 
 ## How to install
 
-1. Clone the git repository: `git clone https://github.com/emgenio/email-poller`
-2. Set up your configurations in `config.yaml` located in the root directory
-3. Compile and execute: `make && ./build/worker`
+1. Get the package: `$> go get github.com/emgenio/email-forwarder`
+2. Run: `$> email-forwarder`
 
 ## Licence
 MIT
