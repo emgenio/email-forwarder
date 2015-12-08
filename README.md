@@ -6,8 +6,16 @@ Email-forwarder instanciates a Rabbit MQ queue specified in a config yaml file, 
 
 ## How to install
 
-1. Get the package: `$> go get github.com/emgenio/email-forwarder`
-2. Run: `$> email-forwarder`
+1. Get the package: `go get github.com/emgenio/email-forwarder`
+2. Run: `email-forwarder`
+
+## Usage
+
+```
+email-forwarder -h
+Usage of email-forwarder:
+  -config="./config.yaml": path to the configuration file.
+```
 
 ## Licence
 MIT
